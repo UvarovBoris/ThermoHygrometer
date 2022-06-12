@@ -23,8 +23,8 @@ MicroDS3231 rtc;
 GyverTM1637 clockDisplay(CLOCK_OUT_CLK_PIN, CLOCK_OUT_DIO_PIN);
 long lastClockCheckMS = 0;
 bool clockPoint = true;
-EncButton<INPUT, CLOCK_HOUR_BTN_PIN> hourBtn;
-EncButton<INPUT, CLOCK_MINUTE_BTN_PIN> minuteBtn;
+EncButton<EB_TICK, CLOCK_HOUR_BTN_PIN> hourBtn;
+EncButton<EB_TICK, CLOCK_MINUTE_BTN_PIN> minuteBtn;
 
 void showHTData(int t, int h) {
   for (int i = 1; i >= 0; i--) {
