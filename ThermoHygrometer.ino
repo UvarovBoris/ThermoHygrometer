@@ -15,7 +15,6 @@
 #define CLOCK_HOUR_BTN_PIN 7
 #define CLOCK_MINUTE_BTN_PIN 8
 
-
 DHT dht(DHT_IN_DATA_PIN, DHT_TYPE);
 GyverTM1637 htDisplay(HT_OUT_CLK_PIN, HT_OUT_DIO_PIN);
 long lastHtCheckMS = 0;
